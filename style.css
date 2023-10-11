@@ -1,11 +1,15 @@
 body {
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 
+/* HEADER STYLES */
 .header {
     background-color: #1F2937;
     display: flex;
     height: 80px;
+    align-items: center;
+    
 }
 
 .header-logo {
@@ -14,19 +18,213 @@ body {
     color: #F9FAF8;
     flex: 1;
     position: relative;
-    top: 20px;
-    left: 100px;
+    left: 150px;
 }
 
 .header-link {
     font-size: 18px;
-    position: relative;
-    top: 20px;
-    right: 100px;
-}
-
-a:link {
-    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
     color: #E5E7EB;
+    flex: 1;
+    position: relative;
+    right: 50px;
 }
 
+a:link, a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+/* MAIN SECTION STYLES */
+.main-context-container {
+    background-color: #1F2937;
+    display: flex;
+    height: 500px;
+    width: auto;
+}
+
+.main-context {
+    flex: 1;
+    position: relative;
+    top: 50px;
+    left: 150px;
+    
+}
+
+.main-text {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+    text-wrap: wrap;
+    width: 450px;
+}
+
+.main-subtext {
+    font-size: 18px;
+    color: #E5E7EB;
+    width: 450px;
+    text-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.signup-btn {
+    background-color: #3882F6;
+    font-size: 18px;
+    font-weight: 700;
+    color: #E5E7EB;
+    width: 100px;
+    height: 35px;
+    border-radius: 7px;
+}
+
+.placeholder-container {
+    flex: 1;
+}
+
+.placeholder {
+    background-color: rgba(212, 212, 212, 0.411);
+    color: #E5E7EB;
+    width: 600px;
+    height:300px;
+    position: absolute;
+    top: 125px;
+    right: 150px;
+}
+
+.placeholder-text{
+    text-align: center;
+    position: relative;
+    top: 125px;
+}
+
+/* RANDOM INFORMATION SECTION STYLES */
+.random-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+}
+
+.random-info-container > p {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+}
+
+.random-info-row {
+    display: flex;
+    justify-content: center;
+}
+
+.img-container {
+    margin: 0px 30px;
+}
+
+.img-holder {
+    width: 145px;
+    height: 150px;
+    border-width: 3px;
+    border-color: #3882F6;
+    border-style: solid;
+    border-radius:9px;
+}
+
+.img-container > p {
+    text-wrap: wrap;
+    text-align: center;
+    width: 150px;
+    margin: 10px 0;
+    color: #1F2937;
+}
+
+/* QUOTE SECTION STYLES */
+.quote-section {
+    background-color: #E5E7EB;
+    height: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.quote-section > p {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1F2937;
+    text-align: left;
+    text-wrap: wrap;
+    width: 800px;
+    margin: 0;
+}
+
+.quote-author{
+    font-size: 24px;
+    font-weight: bold;
+    width: 700px;
+    text-align: right;
+}
+
+/* SIGN UP SECTION STYLES */
+.signup-section-container {
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3882F6;
+    width: 950px;
+    height: 150px;
+    border-radius: 8px;
+    
+}
+
+.signup-section > p {
+    font-weight: 700;
+    font-size: 18px;
+    color: #F9FAF8;
+    width: 500px;
+}
+
+.signup-btn-2 {
+    background-color: #3882F6;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2;
+    border-color: #F9FAF8;
+    color: #F9FAF8;
+    width: 110px;
+    height: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+    top: 0px;
+    right: 50px;
+}
+
+.signup-subtext {
+    color: #E5E7EB;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* FOOTER STYLES */
+.footer {
+    background-color: #1F2937;
+    height: 100px;
+    text-align: center;
+    color: #F9FAF8;
+}
+
+.footer > p {
+    position: relative;
+    top: 40px;
+}
